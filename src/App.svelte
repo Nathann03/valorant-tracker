@@ -309,6 +309,8 @@ let selectedDate = journalDate ? parseDate(journalDate.toString()) : undefined;
             <div class="text-sm">
               <strong>{new Date(date).toLocaleDateString()}:</strong> 
               Kills: {entry.kills}, Deaths: {entry.deaths}, Assists: {entry.assists}, Tilt: {entry.tiltLevel}<br />
+              Maps played: {entry.mapSelected.join(", ")}<br />
+              Agents played: {entry.agentSelected.join(", ")}<br />
               Game Link: {entry.bestGameLink}<br />
               Detailed Notes: {entry.detailedNotes}
             </div>
