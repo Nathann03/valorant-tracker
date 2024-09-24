@@ -1,51 +1,80 @@
-<<<<<<< HEAD
-# Svelte + Vite
+# Valorant Journal
 
-This template should help get you started developing with Svelte in Vite.
+Welcome to the **Valorant Journal**! This application allows players to track their gameplay statistics, reflect on their performance, and manage tips for improvement in Valorant.
 
-## Recommended IDE Setup
+## Features
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+- **User-Friendly Interface**: Easy-to-navigate layout to record and view game stats.
+- **Game Stats Recording**: Input your kills, deaths, assists, tilt level, maps played, agents used, and more.
+- **Journal Entries**: Save and view entries for each game, including links to your best games and detailed notes.
+- **Goal Tracking**: Set and track your KDA (Kill/Death/Assist) and tilt level goals.
+- **Tips and Advice**: Access a list of gameplay tips to improve your skills.
+- **Media Uploads**: Upload images or videos related to your gameplay.
+- **Calendar Integration**: Select a date to review previous entries.
 
-## Need an official Svelte framework?
+## Getting Started
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+To get started with the Valorant Journal, follow these steps:
 
-## Technical considerations
+### Prerequisites
 
-**Why use this over SvelteKit?**
+Ensure you have the following installed:
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+- Node.js (version 14 or later)
+- npm (Node Package Manager)
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+### Installation
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/valorant-journal.git
+   cd valorant-journal
+   ```
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+2. Install the necessary dependencies:
+   ```bash
+   npm install
+   ```
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-**Why include `.vscode/extensions.json`?**
+4. Open your browser and navigate to `http://localhost:5000` to view the application.
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+## Usage
 
-**Why enable `checkJs` in the JS template?**
+1. **Record Your Stats**: Input your game stats after each match, including kills, deaths, assists, and tilt level.
+2. **Save Entries**: Click the "Save" button to store your journal entry.
+3. **View Tips**: Click the "Show All Tips" button to review gameplay tips.
+4. **Access Journal Entries**: Click the "Show All Journal Entries" button to review your saved entries.
+5. **Upload Media**: Choose files to upload related to your gameplay.
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+## Contributing
 
-**Why is HMR not preserving my local component state?**
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to create an issue or submit a pull request.
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/new-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/new-feature
+   ```
+5. Open a pull request.
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+## License
 
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
-=======
-# valorant-tracker
->>>>>>> 47cfb972e1134d38cbbe54359c9ff3ab5192aa73
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to the Svelte community for their incredible resources and support.
+- Special thanks to the Valorant community for their continuous inspiration and motivation.
