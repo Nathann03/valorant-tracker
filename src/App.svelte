@@ -572,9 +572,9 @@ let selectedDate = journalDate ? parseDate(journalDate.toString()) : undefined;
     </Card.Root>
   </div>
   <div class="flex ml-8 mr-10">
-  <p>Note: Upload Images or Videos does not work since stores cannot hold images. </p>
-  <p>Note 2: When changing the journal date, example journal entries will not show up, but personally written ones will when selecting the date and I have no idea why.</p>
-  <p>Note 3: When changing to a journal date you wrote that should change input region with populated values, multiselect will not be populated IDK why.</p>
+  <p class="border">Note: Upload Images or Videos does not work since stores cannot hold images. </p>
+  <p class="border">Note 2: When changing the journal date, example journal entries will not show up, but personally written ones will when selecting the date and I have no idea why.</p>
+  <p class="border">Note 3: When changing to a journal date you wrote that should change input region with populated values, multiselect will not be populated IDK why.</p>
   </div>
 </body>
 
